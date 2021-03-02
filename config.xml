@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget 
+	xmlns:gap="http://phonegap.com/ns/1.0"
+    id="th.co.peachtree.zm004cpf.g1q" 
+    version="3.02"
+    xmlns="http://www.w3.org/ns/widgets"
+    xmlns:cdv="http://cordova.apache.org/ns/1.0">
+
+  <name>
+    <!-- iPlant 2 -->
+	iPlant G1Q
+  </name>
+
+  <description>
+    iPlant G1Q
+  </description>
+
+  <author email="chestha@peachtree.co.th" href="http://www.peachtree.co.th">
+    Chestha Rangkarasamee
+  </author>
+
+
+	<icon src="www/cp.png" />
+    
+	<plugin name="cordova-plugin-battery-status" 			source="npm" />
+	<plugin name="cordova-plugin-camera" 					source="npm" />
+	<plugin name="cordova-plugin-media-capture" 			source="npm" />
+	<plugin name="cordova-plugin-console" 					source="npm" />
+	<plugin name="cordova-plugin-contacts" 					source="npm" />
+	<plugin name="cordova-plugin-device" 					source="npm" />
+<!--	<plugin name="cordova-plugin-device-motion" 			source="npm" />  -->
+	<plugin name="cordova-plugin-file" 						source="npm"/>
+	<plugin name="cordova-plugin-geolocation" 				source="npm" />
+	<plugin name="cordova-plugin-globalization" 			source="npm" />
+	<plugin name="cordova-plugin-inappbrowser"  spec="1.7.2"  />
+	<plugin name="cordova-plugin-media" 					source="npm" />
+	<plugin name="cordova-plugin-network-information" 		source="npm" />
+	<plugin name="cordova-plugin-dialogs" 					source="npm" />
+	<plugin name="cordova-plugin-splashscreen" 				source="npm" />
+	<plugin name="cordova-plugin-vibration" 				source="npm" />
+ 	<plugin name="cordova-plugin-whitelist" 				source="npm" />
+	
+
+	<plugin name="cordova-plugin-uniquedeviceid" 										source="npm" />
+	<plugin name="cordova-plugin-bluetooth-serial" 										source="npm" />
+	<plugin spec="https://github.com/Tlantic/cdv-socket-plugin.git" 					source="git" />
+	<plugin name="phonegap-plugin-barcodescanner" spec="8.0.0">
+            <param name="CAMERA_USAGE_DESCRIPTION" value="Scan QR Codes" />
+    </plugin>
+    
+    <platform name="android">
+        <plugin name="cordova-plugin-cache" />
+	</platform>
+
+        <!-- CLI -->
+    <preference name="pgb-builder-version" value="2" />
+	<preference name="phonegap-version" value="cli-7.1.0" />
+	<plugin name="cordova-android-support-gradle-release" />
+    <preference name="AndroidPersistentFileLocation" value="Compatibility" />
+    
+	<access origin="*" />
+    <access origin="http://cpfdv6.cpf.co.th:8000/*" />
+	<access origin="http://cpfrpt06.cpf.co.th:8002/*" />
+    <access origin="https://miorder.cpf.co.th/*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+
+</widget>
