@@ -14,7 +14,7 @@ sap.ui.controller("zui5sd00e04.OCON", {
 			wei_data	: '',
 			wei_rcv		: '',
 			wei_tare	: '',
-			host		: 'https://g1qapp01.cpf.co.th:44300',
+			host		: 'https://miorders4uat.cpf.co.th',
 			client		: '668',
 			cancel_nav 	: false,
 			oEvt		: null,
